@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table" >
+      <thead class="thead-light" style="margin-top: 500px;">
+        <tr>
+        <th>CustomerId</th>
+        <th>Name</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer.customerId}}</td>
+          <td>{{customer.name}}</td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+

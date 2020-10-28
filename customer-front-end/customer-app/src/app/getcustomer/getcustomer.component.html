@@ -1,0 +1,17 @@
+<form #codeform=ngForm (ngSubmit)=getcustomer(codeform) >
+
+    <div class="form-group">
+    <label>Customer Id</label>
+    <input type="number" name="customerId"   ngModel class="form-control">
+  </div>
+    <input type="submit" value="Search" class="btn btn-success">
+  </form>
+  <br>
+  
+  <div *ngIf="customer!==undefined">
+    <ul style="position: relative;margin-top: 45px;">
+   <li> Id is {{customer.customerId}}</li>
+   <li> Name is {{customer.name}}</li>
+  </ul>
+  
+  </div>
